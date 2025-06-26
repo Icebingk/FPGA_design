@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 10 22:27:29 2024
+# Process ID: 10524
+# Current directory: E:/FPGA/RISC-V/15_ad9238_hdmi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13476 E:\FPGA\RISC-V\15_ad9238_hdmi_test\ad9238_hdmi_test.xpr
+# Log file: E:/FPGA/RISC-V/15_ad9238_hdmi_test/vivado.log
+# Journal file: E:/FPGA/RISC-V/15_ad9238_hdmi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.xpr
+INFO: [Project 1-313] Project file moved from 'E:/FPGA/course_s1_fpga/course_s1_fpga/15_ad9238_hdmi_test' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.ip_user_files', nor could it be found using path 'E:/FPGA/course_s1_fpga/course_s1_fpga/15_ad9238_hdmi_test/ad9238_hdmi_test.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1031.672 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property part xc7z010clg400-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'dpram2048x8' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xczu4ev-sfvc784-1-i' used to customize the IP 'dpram2048x8' do not match.
+WARNING: [IP_Flow 19-2162] IP 'adc_pll' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xczu4ev-sfvc784-1-i' used to customize the IP 'adc_pll' do not match.
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z010clg400-2' and the part 'xczu4ev-sfvc784-1-i' used to customize the IP 'video_pll' do not match.
+report_ip_status -name ip_status 
+upgrade_ip -srcset adc_pll [get_ips  {adc_pll dpram2048x8 video_pll}] -log ip_upgrade.log
+Upgrading 'adc_pll'
+INFO: [Project 1-386] Moving file 'E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/adc_pll/adc_pll.xci' from fileset 'adc_pll' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3438] Customization errors found on 'adc_pll'. Restoring to previous valid configuration.
+WARNING: [IP_Flow 19-1721] During upgrade of 'adc_pll':
+The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+CRITICAL WARNING: [IP_Flow 19-3419] Update of 'adc_pll' to current project options has resulted in an incomplete parameterization. Please review the message log, and recustomize this instance before continuing with your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adc_pll'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'adc_pll' has identified issues that may require user intervention. Please review the upgrade log 'e:/FPGA/RISC-V/15_ad9238_hdmi_test/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Upgrading 'dpram2048x8'
+INFO: [Project 1-386] Moving file 'E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci' from fileset 'dpram2048x8' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated dpram2048x8 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dpram2048x8'...
+Upgrading 'video_pll'
+INFO: [Project 1-386] Moving file 'E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xci' from fileset 'video_pll' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3438] Customization errors found on 'video_pll'. Restoring to previous valid configuration.
+WARNING: [IP_Flow 19-1721] During upgrade of 'video_pll':
+The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+CRITICAL WARNING: [IP_Flow 19-3419] Update of 'video_pll' to current project options has resulted in an incomplete parameterization. Please review the message log, and recustomize this instance before continuing with your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'video_pll' has identified issues that may require user intervention. Please review the upgrade log 'e:/FPGA/RISC-V/15_ad9238_hdmi_test/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/FPGA/RISC-V/15_ad9238_hdmi_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2342.652 ; gain = 120.160
+export_ip_user_files -of_objects [get_ips {adc_pll dpram2048x8 video_pll}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dpram2048x8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'video_pll'...
+[Sun Nov 10 22:41:12 2024] Launched dpram2048x8_synth_1, video_pll_synth_1...
+Run output will be captured here:
+dpram2048x8_synth_1: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/dpram2048x8_synth_1/runme.log
+video_pll_synth_1: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/video_pll_synth_1/runme.log
+[Sun Nov 10 22:41:12 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-2
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2517.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3164.789 ; gain = 551.238
+Finished Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AE5' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H12' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:8]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:10]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J12' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:14]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Illegal to place instance hdmi_d_OBUF[8]_inst on site C13. The location site type (IOPAD) and bel type (IOPAD_PULL) do not match the cell type (OBUFT). Instance hdmi_d_OBUF[8]_inst belongs to a shape with reference instance hdmi_d_OBUF[8]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:17]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:18]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Illegal to place instance hdmi_d_OBUF[11]_inst on site B14. The location site type (IOPAD) and bel type (IOPAD_PULL) do not match the cell type (OBUFT). Instance hdmi_d_OBUF[11]_inst belongs to a shape with reference instance hdmi_d_OBUF[11]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'A13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:20]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:21]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:22]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Illegal to place instance hdmi_d_OBUF[15]_inst on site E14. The location site type (IOPAD) and bel type (IOPAD_PULL) do not match the cell type (OBUFT). Instance hdmi_d_OBUF[15]_inst belongs to a shape with reference instance hdmi_d_OBUF[15]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:23]
+CRITICAL WARNING: [Common 17-69] Command failed: 'F11' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:24]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Illegal to place instance hdmi_d_OBUF[17]_inst on site F12. The location site type (IOPAD) and bel type (IOPAD_PULL) do not match the cell type (OBUFT). Instance hdmi_d_OBUF[17]_inst belongs to a shape with reference instance hdmi_d_OBUF[17]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:25]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:26]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:27]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Illegal to place instance hdmi_d_OBUF[20]_inst on site C12. The location site type (IOPAD) and bel type (IOPAD_PULL) do not match the cell type (OBUFT). Instance hdmi_d_OBUF[20]_inst belongs to a shape with reference instance hdmi_d_OBUF[20]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:28]
+CRITICAL WARNING: [Common 17-69] Command failed: 'D12' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: 'F10' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:30]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G11' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:31]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:32]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:37]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AD10' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:77]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AE14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:78]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AE15' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AD14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:80]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AD15' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AC13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:82]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AC14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y13' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:84]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AH14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:86]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AG14' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:87]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AC11' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:88]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB11' is not a valid site or package pin name. [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc:89]
+Finished Parsing XDC File [E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3164.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 3230.898 ; gain = 888.246
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property package_pin "" [get_ports [list  hdmi_nreset]]
+export_ip_user_files -of_objects  [get_files E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc
+set_property package_pin "" [get_ports [list  hdmi_nreset]]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_HSTL_II_18 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+undo
+INFO: [Common 17-17] undo 'set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]'
+undo
+INFO: [Common 17-17] undo 'set_property IOSTANDARD DIFF_HSTL_II_18 [get_ports [list sys_clk_p]]'
+undo
+INFO: [Common 17-17] undo 'place_ports sys_clk_p U18'
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+undo
+INFO: [Common 17-17] undo 'set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]'
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_HSTL_II_18 [get_ports [list sys_clk_p]]
+place_ports hdmi_sda R16
+place_ports hdmi_scl R18
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 22:59:36 2024...

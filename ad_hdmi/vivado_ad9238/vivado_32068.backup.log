@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 24 10:49:28 2024
+# Process ID: 32068
+# Current directory: E:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16924 E:\AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi\vivado_ad9238\vivado_ad9238.xpr
+# Log file: E:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado.log
+# Journal file: E:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/auto_create_project/my_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'video_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'video_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'video_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'video_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'video_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dpram2048x8' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dpram2048x8' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dpram2048x8' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dpram2048x8' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'dpram2048x8' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'adc_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'adc_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'adc_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'adc_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'adc_pll' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rgb2dvi_0' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rgb2dvi_0' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rgb2dvi_0' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rgb2dvi_0' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rgb2dvi_0' generated file not found 'e:/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 10:52:46 2024...

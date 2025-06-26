@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 10 22:27:29 2024
+# Process ID: 10524
+# Current directory: E:/FPGA/RISC-V/15_ad9238_hdmi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13476 E:\FPGA\RISC-V\15_ad9238_hdmi_test\ad9238_hdmi_test.xpr
+# Log file: E:/FPGA/RISC-V/15_ad9238_hdmi_test/vivado.log
+# Journal file: E:/FPGA/RISC-V/15_ad9238_hdmi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.xpr
+update_compile_order -fileset sources_1
+set_property part xc7z010clg400-2 [current_project]
+report_ip_status -name ip_status 
+upgrade_ip -srcset adc_pll [get_ips  {adc_pll dpram2048x8 video_pll}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {adc_pll dpram2048x8 video_pll}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL12 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+set_property package_pin "" [get_ports [list  hdmi_nreset]]
+export_ip_user_files -of_objects  [get_files E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.srcs/constrs_1/new/ad9238_hdmi.xdc
+set_property package_pin "" [get_ports [list  hdmi_nreset]]
+refresh_design
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_HSTL_II_18 [get_ports [list sys_clk_p]]
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+undo
+undo
+undo
+set_property IOSTANDARD DIFF_SSTL135 [get_ports [list sys_clk_p]]
+undo
+place_ports sys_clk_p U18
+set_property IOSTANDARD DIFF_HSTL_II_18 [get_ports [list sys_clk_p]]
+place_ports hdmi_sda R16
+place_ports hdmi_scl R18

@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov 11 01:58:04 2024
+# Process ID: 23364
+# Current directory: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/top.vds
+# Journal file: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/auto_create_project/my_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/ip 
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5400
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1031.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (1#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'adc_pll' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adc_pll' (3#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000011110000000 
+	Parameter H_FP bound to: 16'b0000000001011000 
+	Parameter H_SYNC bound to: 16'b0000000000101100 
+	Parameter H_BP bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE bound to: 16'b0000010000111000 
+	Parameter V_FP bound to: 16'b0000000000000100 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000100100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000100010011000 
+	Parameter V_TOTAL bound to: 16'b0000010001100101 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (4#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/color_bar.v:33]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/grid_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/timing_gen_xy.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (5#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/timing_gen_xy.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (6#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/grid_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'ad9238_sample' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ad9238_sample.v:29]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad9238_sample' (7#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ad9238_sample.v:29]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9238_sample' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:166]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9238_sample' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:174]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wav_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (8#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-23364-LAPTOP-C0SBPNAP/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (9#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wav_display.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1031.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1031.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1031.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1031.090 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc:1]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:6]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc:2]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:2]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1069.805 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m0/buffer' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m1/buffer' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 8).
+Applied set_property DONT_TOUCH = true for rgb2dvi_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m0/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m1/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for adc_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad9238_sample'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                              000
+                S_SAMPLE |                              010 |                              001
+                  S_WAIT |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad9238_sample'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 9     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 8     
+	  10 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1069.832 ; gain = 38.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | wav_display_m1/timing_gen_xy_m0/hs_d1_reg         | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[15] | 3      | 4     | NO           | NO                 | NO                | 4      | 0       | 
+|top         | wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | NO                | 2      | 0       | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
+|2     |rgb2dvi_0     |         1|
+|3     |adc_pll       |         1|
+|4     |dpram2048x8   |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |adc_pll      |     1|
+|2     |dpram2048x8  |     1|
+|3     |dpram2048x8_ |     1|
+|4     |rgb2dvi      |     1|
+|5     |video_pll    |     1|
+|6     |CARRY4       |    49|
+|7     |LUT1         |    30|
+|8     |LUT2         |   122|
+|9     |LUT3         |    65|
+|10    |LUT4         |    38|
+|11    |LUT5         |    52|
+|12    |LUT6         |    66|
+|13    |SRL16E       |     9|
+|14    |FDCE         |   226|
+|15    |FDPE         |     1|
+|16    |FDRE         |    73|
+|17    |IBUF         |    17|
+|18    |OBUF         |     3|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1076.285 ; gain = 6.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1076.285 ; gain = 45.195
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1085.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1085.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1085.098 ; gain = 54.008
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 01:58:31 2024...

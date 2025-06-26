@@ -1,0 +1,3 @@
+GPIO0:DRDY
+GPIO1-GPIO8:8位信号
+GPIO9:信号闪烁

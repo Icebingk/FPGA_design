@@ -1,0 +1,762 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ad_hdmi/auto_create_project/my_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23612
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1029.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:29]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:138]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (2#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (3#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ADC_CLK_Div' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ADC_CLK_Div.v:23]
+	Parameter DIV_NUM bound to: 4000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADC_CLK_Div' (4#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ADC_CLK_Div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_CLK_Div__parameterized0' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ADC_CLK_Div.v:23]
+	Parameter DIV_NUM bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ADC_CLK_Div__parameterized0' (4#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ADC_CLK_Div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_pll' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adc_pll' (5#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (6#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/color_bar.v:33]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/grid_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/timing_gen_xy.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (7#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/timing_gen_xy.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (8#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/grid_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'ad9238_sample' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ad9238_sample.v:29]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad9238_sample' (9#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/ad9238_sample.v:29]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9238_sample' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:226]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9238_sample' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:235]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wav_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (10#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (11#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wav_display.v:29]
+INFO: [Synth 8-6157] synthesizing module 'wave' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wave_clk' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_clk.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (12#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'wave_clk' (13#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_clk.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wave_comparator' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_tri' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rom_tri_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_tri' (14#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rom_tri_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (7) of module 'rom_tri' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:34]
+WARNING: [Synth 8-7071] port 'wea' of module 'rom_tri' is unconnected for instance 'rom_ip1' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:31]
+WARNING: [Synth 8-7071] port 'dina' of module 'rom_tri' is unconnected for instance 'rom_ip1' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:31]
+WARNING: [Synth 8-7023] instance 'rom_ip1' of module 'rom_tri' has 5 connections declared, but only 3 given [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:31]
+INFO: [Synth 8-6157] synthesizing module 'rom_sin' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rom_sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_sin' (15#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/.Xil/Vivado-24132-LAPTOP-C0SBPNAP/realtime/rom_sin_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (10) of module 'rom_sin' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:41]
+WARNING: [Synth 8-7071] port 'wea' of module 'rom_sin' is unconnected for instance 'rom_ip2' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:38]
+WARNING: [Synth 8-7071] port 'dina' of module 'rom_sin' is unconnected for instance 'rom_ip2' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:38]
+WARNING: [Synth 8-7023] instance 'rom_ip2' of module 'rom_sin' has 5 connections declared, but only 3 given [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'wave_comparator' (16#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave_comparator.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (17#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/wave.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SPWM_Time' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/SPWM_Time.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPWM_Time' (18#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/SPWM_Time.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv_soc_top' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/soc/tinyriscv_soc_top.v:19]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/regs.v:52]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/tinyriscv.v:20]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/pc_reg.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (19#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/pc_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ctrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (20#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ctrl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'regs' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/regs.v:20]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/regs.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (21#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/regs.v:20]
+INFO: [Synth 8-6157] synthesizing module 'csr_reg' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'csr_reg' (22#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/csr_reg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/if_id.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff' (23#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized0' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized0' (23#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (24#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/if_id.v:20]
+INFO: [Synth 8-6157] synthesizing module 'id' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id.v:21]
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id.v:87]
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id.v:106]
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'id' (25#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id.v:21]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id_ex.v:20]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized1' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized1' (25#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6157] synthesizing module 'gen_pipe_dff__parameterized2' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_pipe_dff__parameterized2' (25#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/utils/gen_dff.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (26#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/id_ex.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ex' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ex.v:21]
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ex.v:256]
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ex.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (27#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/ex.v:21]
+INFO: [Synth 8-6157] synthesizing module 'div' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/div.v:22]
+	Parameter STATE_IDLE bound to: 4'b0001 
+	Parameter STATE_START bound to: 4'b0010 
+	Parameter STATE_CALC bound to: 4'b0100 
+	Parameter STATE_END bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/div.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'div' (28#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/div.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clint' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/clint.v:22]
+	Parameter S_INT_IDLE bound to: 4'b0001 
+	Parameter S_INT_SYNC_ASSERT bound to: 4'b0010 
+	Parameter S_INT_ASYNC_ASSERT bound to: 4'b0100 
+	Parameter S_INT_MRET bound to: 4'b1000 
+	Parameter S_CSR_IDLE bound to: 5'b00001 
+	Parameter S_CSR_MSTATUS bound to: 5'b00010 
+	Parameter S_CSR_MEPC bound to: 5'b00100 
+	Parameter S_CSR_MSTATUS_MRET bound to: 5'b01000 
+	Parameter S_CSR_MCAUSE bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'clint' (29#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/clint.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv' (30#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/tinyriscv.v:20]
+INFO: [Synth 8-6157] synthesizing module 'rom' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/rom.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (31#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/rom.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ram' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/ram.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (32#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/ram.v:20]
+INFO: [Synth 8-6157] synthesizing module 'timer' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/timer.v:21]
+	Parameter REG_CTRL bound to: 4'b0000 
+	Parameter REG_COUNT bound to: 4'b0100 
+	Parameter REG_VALUE bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/timer.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (33#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/timer.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/uart.v:19]
+	Parameter BAUD_115200 bound to: 440 - type: integer 
+	Parameter S_IDLE bound to: 4'b0001 
+	Parameter S_START bound to: 4'b0010 
+	Parameter S_SEND_BYTE bound to: 4'b0100 
+	Parameter S_STOP bound to: 4'b1000 
+	Parameter UART_CTRL bound to: 8'b00000000 
+	Parameter UART_STATUS bound to: 8'b00000100 
+	Parameter UART_BAUD bound to: 8'b00001000 
+	Parameter UART_TXDATA bound to: 8'b00001100 
+	Parameter UART_RXDATA bound to: 8'b00010000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/uart.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/uart.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/uart.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (34#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/uart.v:19]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/gpio.v:19]
+	Parameter GPIO_CTRL bound to: 4'b0000 
+	Parameter GPIO_DATA bound to: 4'b0100 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/gpio.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (35#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/perips/gpio.v:19]
+INFO: [Synth 8-6157] synthesizing module 'rib' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/rib.v:21]
+	Parameter slave_0 bound to: 4'b0000 
+	Parameter slave_1 bound to: 4'b0001 
+	Parameter slave_2 bound to: 4'b0010 
+	Parameter slave_3 bound to: 4'b0011 
+	Parameter slave_4 bound to: 4'b0100 
+	Parameter slave_5 bound to: 4'b0101 
+	Parameter grant0 bound to: 2'b00 
+	Parameter grant1 bound to: 2'b01 
+	Parameter grant2 bound to: 2'b10 
+	Parameter grant3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/rib.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'rib' (36#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/core/rib.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_debug' [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:44]
+	Parameter S_IDLE bound to: 14'b00000000000001 
+	Parameter S_INIT_UART_BAUD bound to: 14'b00000000000010 
+	Parameter S_CLEAR_UART_RX_OVER_FLAG bound to: 14'b00000000000100 
+	Parameter S_WAIT_BYTE bound to: 14'b00000000001000 
+	Parameter S_WAIT_BYTE2 bound to: 14'b00000000010000 
+	Parameter S_GET_BYTE bound to: 14'b00000000100000 
+	Parameter S_REC_FIRST_PACKET bound to: 14'b00000001000000 
+	Parameter S_REC_REMAIN_PACKET bound to: 14'b00000010000000 
+	Parameter S_SEND_ACK bound to: 14'b00000100000000 
+	Parameter S_SEND_NAK bound to: 14'b00001000000000 
+	Parameter S_CRC_START bound to: 14'b00010000000000 
+	Parameter S_CRC_CALC bound to: 14'b00100000000000 
+	Parameter S_CRC_END bound to: 14'b01000000000000 
+	Parameter S_WRITE_MEM bound to: 14'b10000000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:108]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:220]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:236]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:269]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:288]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:306]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:324]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:379]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:404]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:423]
+INFO: [Synth 8-6155] done synthesizing module 'uart_debug' (37#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/debug/uart_debug.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_soc_top' (38#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/rtl/soc/tinyriscv_soc_top.v:19]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ad9238_sample_m1'. This will prevent further optimization [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:230]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'wav_display_m1'. This will prevent further optimization [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:256]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_m0'. This will prevent further optimization [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'top' (39#1) [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/new/top.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.195 ; gain = 133.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.195 ; gain = 133.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.195 ; gain = 133.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1163.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc:1]
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:6]
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rom_sin/rom_sin/rom_sin_in_context.xdc] for cell 'wave_inst/wave_comparator/rom_ip2'
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rom_sin/rom_sin/rom_sin_in_context.xdc] for cell 'wave_inst/wave_comparator/rom_ip2'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'wave_inst/wave_clk/clk_generator_sin'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc:4]
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'wave_inst/wave_clk/clk_generator_sin'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc:2]
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rom_tri/rom_tri/rom_tri_in_context.xdc] for cell 'wave_inst/wave_comparator/rom_ip1'
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rom_tri/rom_tri/rom_tri_in_context.xdc] for cell 'wave_inst/wave_comparator/rom_ip1'
+Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/ila_0_1/ila_0/ila_0_in_context.xdc] for cell 'ila_m0'
+Finished Parsing XDC File [e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/ila_0_1/ila_0/ila_0_in_context.xdc] for cell 'ila_m0'
+Parsing XDC File [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1181.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1181.762 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m0/buffer' at clock pin 'clkb' is different from the actual clock period '13.474', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m1/buffer' at clock pin 'clkb' is different from the actual clock period '13.474', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/ad_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 8).
+Applied set_property DONT_TOUCH = true for rgb2dvi_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wave_inst/wave_comparator/rom_ip2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wave_inst/wave_clk/clk_generator_sin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m0/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m1/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for adc_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wave_inst/wave_comparator/rom_ip1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad9238_sample'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'clint'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_debug'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                              000
+                S_SAMPLE |                              010 |                              001
+                  S_WAIT |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad9238_sample'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                             0001 |                             0001
+             STATE_START |                             0010 |                             0010
+              STATE_CALC |                             0100 |                             0100
+               STATE_END |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_CSR_IDLE |                            00001 |                            00001
+              S_CSR_MEPC |                            00100 |                            00100
+           S_CSR_MSTATUS |                            00010 |                            00010
+            S_CSR_MCAUSE |                            10000 |                            10000
+      S_CSR_MSTATUS_MRET |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'csr_state_reg' in module 'clint'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                   00000000000001 |                   00000000000001
+        S_INIT_UART_BAUD |                   00000000000010 |                   00000000000010
+      S_REC_FIRST_PACKET |                   00000001000000 |                   00000001000000
+S_CLEAR_UART_RX_OVER_FLAG |                   00000000000100 |                   00000000000100
+             S_WAIT_BYTE |                   00000000001000 |                   00000000001000
+            S_WAIT_BYTE2 |                   00000000010000 |                   00000000010000
+              S_GET_BYTE |                   00000000100000 |                   00000000100000
+             S_CRC_START |                   00010000000000 |                   00010000000000
+              S_CRC_CALC |                   00100000000000 |                   00100000000000
+               S_CRC_END |                   01000000000000 |                   01000000000000
+             S_WRITE_MEM |                   10000000000000 |                   10000000000000
+              S_SEND_ACK |                   00000100000000 |                   00000100000000
+              S_SEND_NAK |                   00001000000000 |                   00001000000000
+     S_REC_REMAIN_PACKET |                   00000010000000 |                   00000010000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'uart_debug'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 17    
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 8     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 78    
+	               24 Bit    Registers := 9     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 147   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 53    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 227   
+	  33 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 11    
+	   6 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 20    
+	  11 Input   32 Bit        Muxes := 5     
+	   7 Input   32 Bit        Muxes := 25    
+	   3 Input   32 Bit        Muxes := 2     
+	  15 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 24    
+	   7 Input   28 Bit        Muxes := 24    
+	   4 Input   28 Bit        Muxes := 6     
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 5     
+	  15 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	  15 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 4     
+	  13 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 3     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 6     
+	   3 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 19    
+	   3 Input    5 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 3     
+	  13 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 5     
+	  11 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 259   
+	   7 Input    1 Bit        Muxes := 30    
+	   8 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 17    
+	  13 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 147   
+	  11 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 19    
+	  15 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:46 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------+-----------+----------------------+------------------+
+|top         | u_ram/_ram_reg | Implied   | 4 K x 32             | RAM256X1S x 512	 | 
+|top         | u_rom/_rom_reg | Implied   | 4 K x 32             | RAM256X1S x 512	 | 
++------------+----------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:56 . Memory (MB): peak = 1186.781 ; gain = 156.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:14 . Memory (MB): peak = 1362.777 ; gain = 332.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------+-----------+----------------------+------------------+
+|top         | u_ram/_ram_reg | Implied   | 4 K x 32             | RAM256X1S x 512	 | 
+|top         | u_rom/_rom_reg | Implied   | 4 K x 32             | RAM256X1S x 512	 | 
++------------+----------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:19 . Memory (MB): peak = 1375.023 ; gain = 345.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip1  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \wave_inst/wave_comparator/rom_ip2  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:01:22 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:01:22 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:01:23 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:01:23 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:01:24 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:01:24 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | wav_display_m0/timing_gen_xy_m0/hs_d1_reg         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[15] | 3      | 4     | NO           | NO                 | NO                | 4      | 0       | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dpram2048x8   |         2|
+|2     |ila_0         |         1|
+|3     |video_pll     |         1|
+|4     |rgb2dvi_0     |         1|
+|5     |adc_pll       |         1|
+|6     |clk_wiz_1     |         1|
+|7     |rom_tri       |         1|
+|8     |rom_sin       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |adc_pll      |     1|
+|2     |clk_wiz      |     1|
+|3     |dpram2048x8  |     1|
+|4     |dpram2048x8_ |     1|
+|5     |ila          |     1|
+|6     |rgb2dvi      |     1|
+|7     |rom_sin      |     1|
+|8     |rom_tri      |     1|
+|9     |video_pll    |     1|
+|10    |BUFG         |     1|
+|11    |CARRY4       |   279|
+|12    |DSP48E1      |     4|
+|13    |LUT1         |   354|
+|14    |LUT2         |   662|
+|15    |LUT3         |   388|
+|16    |LUT4         |  1027|
+|17    |LUT5         |   542|
+|18    |LUT6         |  3824|
+|19    |MUXF7        |   762|
+|20    |MUXF8        |   294|
+|21    |RAM256X1S    |  1024|
+|22    |SRL16E       |     7|
+|23    |FDCE         |   296|
+|24    |FDPE         |     2|
+|25    |FDRE         |  3665|
+|26    |FDSE         |    19|
+|27    |IBUF         |    11|
+|28    |IOBUF        |    13|
+|29    |OBUF         |     8|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:01:24 . Memory (MB): peak = 1375.824 ; gain = 345.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 26 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:21 . Memory (MB): peak = 1375.824 ; gain = 322.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:01:24 . Memory (MB): peak = 1375.824 ; gain = 345.996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1375.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2376 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1375.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1037 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 13 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1024 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 20 Warnings, 26 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:31 . Memory (MB): peak = 1375.824 ; gain = 345.996
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 06:07:17 2024...

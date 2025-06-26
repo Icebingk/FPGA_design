@@ -1,0 +1,651 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 10 23:16:40 2024
+# Process ID: 22988
+# Current directory: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4184 E:\FPGA\RISC-V\AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi\vivado_ad9238\vivado_ad9238.xpr
+# Log file: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado.log
+# Journal file: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/auto_create_project/my_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov 10 23:17:17 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp' for cell 'adc_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1233.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+get_clocks: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1917.852 ; gain = 569.309
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1917.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1949.355 ; gain = 923.254
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Sun Nov 10 23:22:14 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp' for cell 'adc_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1993.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -jobs 16
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2197.199 ; gain = 15.711
+[Sun Nov 10 23:23:16 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Nov 10 23:25:07 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-09:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2895.238 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4144.859 ; gain = 1249.621
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices arm_dap_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ad9238_clk_ch1'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[0]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[1]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[2]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[3]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[4]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[5]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[6]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[7]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[8]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[9]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[10]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[11]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_clk_ch1'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[*]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad9238_data_ch1[*]'. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Mon Nov 11 01:15:20 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp' for cell 'adc_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4147.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -jobs 16
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4147.707 ; gain = 0.000
+[Mon Nov 11 01:16:29 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Nov 11 01:17:42 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {20} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {50.000} CONFIG.CLKOUT1_JITTER {249.363} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_ips adc_pll]
+generate_target all [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'adc_pll'...
+catch { config_ip_cache -export [get_ips -all adc_pll] }
+export_ip_user_files -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -no_script -sync -force -quiet
+reset_run adc_pll_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1
+
+launch_runs adc_pll_synth_1 -jobs 16
+[Mon Nov 11 01:28:25 2024] Launched adc_pll_synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1/runme.log
+export_simulation -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files -ipstatic_source_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/modelsim} {questa=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/questa} {riviera=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/riviera} {activehdl=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 11 01:29:08 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+[Mon Nov 11 01:29:08 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Nov 11 01:30:26 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp' for cell 'adc_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4147.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {30} CONFIG.MMCM_CLKFBOUT_MULT_F {19.875} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33.125} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {222.915} CONFIG.CLKOUT1_PHASE_ERROR {157.402} CONFIG.CLKOUT2_JITTER {162.035} CONFIG.CLKOUT2_PHASE_ERROR {164.985}] [get_ips adc_pll]
+delete_ip_run [get_files -of_objects [get_fileset adc_pll] E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1
+
+INFO: [Project 1-386] Moving file 'E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci' from fileset 'adc_pll' to fileset 'sources_1'.
+set_property generate_synth_checkpoint false [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+generate_target all [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'adc_pll'...
+export_ip_user_files -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files -ipstatic_source_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/modelsim} {questa=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/questa} {riviera=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/riviera} {activehdl=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Mon Nov 11 01:40:04 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 11 01:41:01 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Nov 11 01:42:13 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property -dict [list CONFIG.ENABLE_CLOCK_MONITOR {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.PRIMITIVE {MMCM} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {192.113} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_ips adc_pll]
+set_property generate_synth_checkpoint true [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+generate_target all [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'adc_pll'...
+catch { config_ip_cache -export [get_ips -all adc_pll] }
+export_ip_user_files -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+launch_runs adc_pll_synth_1 -jobs 16
+[Mon Nov 11 01:45:25 2024] Launched adc_pll_synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1/runme.log
+export_simulation -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files -ipstatic_source_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/modelsim} {questa=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/questa} {riviera=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/riviera} {activehdl=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {742.5} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.CLKOUT1_JITTER {421.208} CONFIG.CLKOUT2_JITTER {340.171}] [get_ips video_pll]
+generate_target all [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'video_pll'...
+catch { config_ip_cache -export [get_ips -all video_pll] }
+export_ip_user_files -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xci] -no_script -sync -force -quiet
+reset_run video_pll_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/video_pll_synth_1
+
+launch_runs video_pll_synth_1 -jobs 16
+[Mon Nov 11 01:55:08 2024] Launched video_pll_synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/video_pll_synth_1/runme.log
+export_simulation -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xci] -directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files -ipstatic_source_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/modelsim} {questa=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/questa} {riviera=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/riviera} {activehdl=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 11 01:56:01 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+[Mon Nov 11 01:56:01 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_USED {true} CONFIG.ENABLE_CLOCK_MONITOR {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {65} CONFIG.PRIMITIVE {MMCM} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {40.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.625} CONFIG.CLKOUT1_JITTER {234.462} CONFIG.CLKOUT1_PHASE_ERROR {233.132}] [get_ips adc_pll]
+generate_target all [get_files  E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'adc_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'adc_pll'...
+catch { config_ip_cache -export [get_ips -all adc_pll] }
+export_ip_user_files -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -no_script -sync -force -quiet
+reset_run adc_pll_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1
+
+launch_runs adc_pll_synth_1 -jobs 16
+[Mon Nov 11 01:57:36 2024] Launched adc_pll_synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1/runme.log
+export_simulation -of_objects [get_files E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xci] -directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files -ipstatic_source_dir E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/modelsim} {questa=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/questa} {riviera=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/riviera} {activehdl=E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 11 01:57:42 2024] Launched adc_pll_synth_1, synth_1...
+Run output will be captured here:
+adc_pll_synth_1: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1/runme.log
+synth_1: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+[Mon Nov 11 01:57:42 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Mon Nov 11 01:57:44 2024] Launched adc_pll_synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/adc_pll_synth_1/runme.log
+[Mon Nov 11 01:57:44 2024] Launched synth_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Nov 11 01:58:35 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Nov 11 01:59:30 2024] Launched impl_1...
+Run output will be captured here: E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.runs/impl_1/top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.dcp' for cell 'adc_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'wav_display_m0/buffer'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4654.984 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, video_pll_m0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pll_m0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc:57]
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_board.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll.xdc] for cell 'adc_pll_m0/inst'
+Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Finished Parsing XDC File [E:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/constrs_1/new/ad9238_hdmi.xdc]
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+Finished Parsing XDC File [e:/FPGA/RISC-V/AX7010_2023.1-course_s1_fpga-18_ad9238_hdmi/vivado_ad9238/vivado_ad9238.srcs/sources_1/ip/adc_pll/adc_pll_late.xdc] for cell 'adc_pll_m0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 4654.984 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 10:42:43 2024...

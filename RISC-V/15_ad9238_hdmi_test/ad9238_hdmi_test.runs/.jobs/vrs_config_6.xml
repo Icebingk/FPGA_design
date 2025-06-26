@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="dpram2048x8_synth_1" LaunchDir="E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/dpram2048x8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_pll_synth_1" LaunchDir="E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/video_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="dpram2048x8_synth_1"/>
+		<Parent Id="video_pll_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

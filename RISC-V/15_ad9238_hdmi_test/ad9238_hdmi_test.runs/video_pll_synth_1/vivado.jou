@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 10 22:41:14 2024
+# Process ID: 13736
+# Current directory: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/video_pll_synth_1
+# Command line: vivado.exe -log video_pll.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_pll.tcl
+# Log file: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/video_pll_synth_1/video_pll.vds
+# Journal file: E:/FPGA/RISC-V/15_ad9238_hdmi_test/ad9238_hdmi_test.runs/video_pll_synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_pll.tcl -notrace

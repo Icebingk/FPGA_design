@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 29 19:28:41 2024
+# Process ID: 13820
+# Current directory: E:/Clock_12/Clock_12.runs/synth_1
+# Command line: vivado.exe -log game_count.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_count.tcl
+# Log file: E:/Clock_12/Clock_12.runs/synth_1/game_count.vds
+# Journal file: E:/Clock_12/Clock_12.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game_count.tcl -notrace

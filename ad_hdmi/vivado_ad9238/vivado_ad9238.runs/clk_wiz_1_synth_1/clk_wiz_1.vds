@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Nov 30 04:33:50 2024
+# Process ID: 17596
+# Current directory: E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/clk_wiz_1_synth_1
+# Command line: vivado.exe -log clk_wiz_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_1.tcl
+# Log file: E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/clk_wiz_1_synth_1/clk_wiz_1.vds
+# Journal file: E:/ad_hdmi/vivado_ad9238/vivado_ad9238.runs/clk_wiz_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ad_hdmi/auto_create_project/my_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_1, cache-ID = e3320d46c65d8ba0.
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 04:34:01 2024...
